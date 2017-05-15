@@ -10,6 +10,17 @@ if it's the first time you're on linux or you just doesn't know how zsh work for
 just select option 2 when it's asked to you "
 sudo apt-get update ; sudo apt-get install zsh
 
+echo "#######################################################"
+echo "############# INSTALL build-essential  ################"
+echo "#######################################################"
+echo "  "
+
+echo "   "
+echo "install done."
+echo "   "
+
+sudo apt-get install build-essential
+
 echo "   "
 echo "install done."
 echo "   "
@@ -30,9 +41,9 @@ echo "############# configure git ################"
 echo "############################################"
 echo "  "
 
-git config --global user.name "curlynux"
-git config --global user.email smpunchack@gmail.com
-ssh-keygen -t rsa -b 4096 -C "smpunchack@gmail.com"
+git config --global user.name "your_UserName"
+git config --global user.email exemple@mail.com
+ssh-keygen -t rsa -b 4096 -C "ex@mail.com"
 cat $HOME/.ssh/id_rsa.pub
 
 echo "################################################"
