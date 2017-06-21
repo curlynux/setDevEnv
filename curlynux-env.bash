@@ -1,23 +1,9 @@
 #!/bin/bash
 
-echo "###########################################"
-echo "############# INSTALL ZSH  ################"
-echo "###########################################"
-echo "  "
-
-echo "before installing zsh, 
-if it's the first time you're on linux or you just doesn't know how zsh work for the begining.
-just select option 2 when it's asked to you "
-sudo apt-get update ; sudo apt-get install zsh
-
 echo "#######################################################"
 echo "############# INSTALL build-essential  ################"
 echo "#######################################################"
 echo "  "
-
-echo "   "
-echo "install done."
-echo "   "
 
 sudo apt-get install build-essential
 
@@ -35,6 +21,17 @@ sudo apt-get install git
 echo "   "
 echo "install done."
 echo "   "
+
+echo "###########################################"
+echo "############# INSTALL ZSH  ################"
+echo "###########################################"
+echo "  "
+
+echo "before installing zsh,
+if it's the first time you're on linux or you just doesn't know how zsh work for the begining.
+just select option 2 when it's asked to you "
+sudo apt-get update ; sudo apt-get install zsh
+
 
 echo "############################################"
 echo "############# configure git ################"
@@ -92,5 +89,5 @@ echo "   "
 echo "###########################################"
 echo "############# INSTALL atom ################"
 echo "############ ### ##########################"
-
-sudo apt-get install gdebi ; sudo gdebi $HOME/Téléchargements/atom-amd64.deb
+sudo apt-get install -y build-essential git libsecret-1-dev fakeroot rpm libx11-dev libxkbfile-dev
+cd $HOME/Téléchargements && cd atom ; node ./script/build
